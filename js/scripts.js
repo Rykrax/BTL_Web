@@ -3,7 +3,7 @@ window.onload = function() {
     const closeButton = document.querySelector('.close-button');
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('.overlay');
-    const profileButton = document.querySelector(".profile-button");
+    const openProfile = document.querySelector(".profile-button");
     const profile = document.querySelector(".profile-container");
     
     //focus input search
@@ -15,13 +15,18 @@ window.onload = function() {
     });
 
     //----------------------------------------------
-    // openButton.addEventListener("click", function () {
+    // openButton.addEventListener("click", function() {
     //     sidebar.classList.toggle("active");
     //     overlay.classList.toggle("active");
     // });
 
-    // closeButton.addEventListener("click", function () {
+    // closeButton.addEventListener("click", function() {
     //     sidebar.classList.toggle("active");
+    //     overlay.classList.toggle("active");
+    // });
+
+    // openProfile.addEventListener("click", function() {
+    //     profile.classList.toggle("active");
     //     overlay.classList.toggle("active");
     // });
     // function openOverlay() {
@@ -31,18 +36,6 @@ window.onload = function() {
     // function closeOverlay() {
     //     overlay.classList.remove('active');
     // }
-
-    function openSidebar() {
-        console.log('Opening sidebar...');
-        sidebar.classList.add('show');
-        overlay.classList.add('show');
-    }
-
-    function closeSidebar() {
-        console.log('Closing sidebar...');
-        sidebar.classList.remove('show');
-        overlay.classList.remove('show');
-    }
 
     // function openProfile() {
     //     console.log('Opening profile...');
@@ -56,11 +49,31 @@ window.onload = function() {
     //     closeOverlay();
     // }
 
-    openButton.addEventListener('click', openSidebar);
-    closeButton.addEventListener('click', closeSidebar);
-    overlay.addEventListener('click', closeSidebar);
-    overlay.addEventListener('click', closeProfile);
-    
+    openButton.addEventListener('click', function() {
+        console.log('Opening sidebar...');
+        sidebar.classList.add('show');
+        overlay.classList.add('show');
+    });
 
-    // profileButton.addEventListener("click",openProfile);
+    closeButton.addEventListener('click', function() {
+        console.log('Closing sidebar...');
+        sidebar.classList.remove('show');
+        overlay.classList.remove('show');
+    });
+
+    openProfile.addEventListener("click", function() {
+        console.log('Opening profile...');
+        profile.classList.add('show');
+        overlay.classList.add('show');
+    });
+
+    overlay.addEventListener('click', function() {
+        if (sidebar.classList.contains('show')) {
+            sidebar.classList.remove('show');
+        }
+        if (profile.classList.contains('show')) {
+            profile.classList.remove('show');
+        }
+        overlay.classList.remove('show');
+    });
 };
