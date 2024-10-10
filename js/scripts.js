@@ -60,6 +60,7 @@ window.onload = function() {
     closeButton.addEventListener('click', closeSidebar);
     overlay.addEventListener('click', closeSidebar);
     overlay.addEventListener('click', closeProfile);
+    
 
     // profileButton.addEventListener("click",openProfile);
 };
