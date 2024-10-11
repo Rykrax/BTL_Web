@@ -33,6 +33,11 @@ body {
     text-decoration: none;
 }
 
+.header-wrapper a:hover {
+    text-decoration: underline;
+    color: #ff6740;
+}
+
 .header-wrapper img {
     height: var(--header-logo-login);
 }
@@ -42,4 +47,111 @@ body {
     line-height: 6rem;
     color: var(--white-color);
     font-size: 2rem;
+}
+
+.login-page-form {
+    width: 26rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    border-top: 0.25rem solid #ff6740;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 20px 20px rgb(0 0 0 / 20%) !important;
+}
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+}
+
+.login-text {
+    margin: 10px 0;
+    padding: 0 1.25rem;
+}
+
+.login-text span {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-label {
+    color: var(--white-color);
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.2rem;
+    background-color: #3D414A;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.login-settings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.checkbox {
+    color: var(--white-color);
+}
+
+.checkbox label {
+
+}
+
+.forgot-pass {
+    height: 2.25rem;
+}
+
+.forgot-pass a {
+    text-decoration: none;
+    color: #ff6740;
+}
+
+.forgot-pass:hover a {
+    text-decoration: underline;
+}
+
+#login-button {
+    width: 100%;
+    padding: 0.5rem 0.625rem;
+    border: none;
+    border-radius: 0.25rem !important;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: #ff6740;
+}
+
+.info-wrapper {
+    /* padding: 1rem 0; */
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+.registration a {
+    margin-left: 0.2rem;
+    text-decoration: none;
+    color: #ff6740;
+}
+
+.registration a:hover {
+    text-decoration: underline;
 }

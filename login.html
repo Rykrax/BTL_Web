@@ -18,17 +18,65 @@
     <div class="login-page">
         <div class="login-page-header">
             <div class="header-wrapper">
-                <a href="">
-                    <img src="./assets/img/favicon.ico" alt="">
+                <a href="index.html">
+                    <img style="user-select: none;" src="./assets/img/favicon.ico" alt="">
                     <span>MangaToon</span>
                 </a>
             </div>
         </div>
 
         <div class="login-page-form">
-            <form action="" method="get">
-                hehe<input type="text">
-            </form>
+            <div class="content-wrapper">
+                <div class="login-header">
+                    <div class="login-text">
+                        <span>Đăng nhập</span>
+                    </div>
+                </div>
+
+                <form id="register-form" action="" method="get">
+                    <div class="form-group">
+                        <div><label class="form-label" for="username">Tài khoản</label></div>
+                        <div><input class="form-input" type="text" id="username" name="username"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div><label class="form-label" for="password">Mật khẩu</label></div>
+                        <div><input class="form-input" type="password" name="password" id="password"></div>  
+                    </div>
+
+                    <div class="form-group login-settings">
+                        <div class="form-options">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span>Nhớ mật khẩu</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="forgot-pass">
+                            <span>
+                                <a href="">Quên mật khẩu?</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-button">
+                            <input id="login-button" type="submit" value="Đăng nhập">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="info-wrapper">
+                    <div class="registration">
+                        <span>
+                            Người mới? 
+                            <a href="register.html">Đăng ký</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
