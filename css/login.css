@@ -1,0 +1,45 @@
+html {
+    font-family: 'League spartan';
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('/assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+body {
+    background-color: #363636;
+}
+
+.login-page {
+    padding-top: 20px;
+}
+
+.login-page-header {
+    height: 6rem;
+    margin-bottom: 2.5rem;
+}
+
+.header-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.header-wrapper a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-wrapper img {
+    height: var(--header-logo-login);
+}
+
+.header-wrapper span {
+    height: 6rem;
+    line-height: 6rem;
+    color: var(--white-color);
+    font-size: 2rem;
+}

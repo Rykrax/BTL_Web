@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/fonts/font-awesome-6.5.2-pro-full-main/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <script src="./js/scripts.js"></script>
 </head>
 
@@ -65,15 +66,22 @@
 
                         <li class="list-item">
                             <a href="#" class="nav-link">
-                                <i class="fa-regular fa-gear icon"></i>
-                                <span class="link">Cài đặt</span>
+                                <i class="fa-sharp fa-solid fa-list icon"></i>
+                                <span class="link">Thể loại</span>
                             </a>
                         </li>
 
                         <li class="list-item">
-                            <a href="#" class="nav-link">
+                            <a href="login.html" class="nav-link">
                                 <i class="fa-regular fa-right-to-bracket icon"></i>
                                 <span class="link">Đăng nhập</span>
+                            </a>
+                        </li>
+
+                        <li style="display: none;" class="list-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-regular fa-right-from-bracket icon"></i>
+                                <span class="link">Đăng xuất</span>
                             </a>
                         </li>
                     </ul>
@@ -101,13 +109,26 @@
                                 </div>
                                 <hr>
                                 
-                                <button class="sign-in">
+                                <button class="sign-in" onclick="login();">
                                     <p>Đăng nhập</p>
                                 </button>
 
-                                <button class="register">
+                                <button class="register" onclick="register();">
                                     <p>Đăng ký</p>
                                 </button>
+
+                                <!-- <div class="user-info-login">
+                                    <span>Phạm Tuấn Khang</span>
+                                </div>
+                                <hr>
+
+                                <div class="profile-info">
+                                    <span>Thông tin cá nhân</span>
+                                </div>
+
+                                <div class="log-out">
+                                    <span>Đăng xuất</span>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -115,11 +136,9 @@
                     <div class="theme-button">
                         <button class="icon-button">
                             <i id="moon" class="fa-sharp fa-solid fa-moon-stars"></i>
+                             <i id="sun" class="fa-light fa-sun-bright"></i>
                         </button>
                     </div>
-                    <!-- <i style="color: black;" class="fa-solid fa-moon"></i> -->
-                    
-                    <!-- <i id="sun" class="fa-light fa-sun-bright"></i> -->
                 </div>  
             </div>
         </nav>

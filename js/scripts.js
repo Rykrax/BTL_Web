@@ -5,6 +5,8 @@ window.onload = function() {
     const overlay = document.querySelector('.overlay');
     const openProfile = document.querySelector(".profile-button");
     const profile = document.querySelector(".profile-container");
+    const moonIcon = document.getElementById('moon');
+    const sunIcon = document.getElementById('sun');
     
     //focus input search
     const searchContainer = document.querySelector(".header-options .search");
@@ -76,4 +78,23 @@ window.onload = function() {
         }
         overlay.classList.remove('show');
     });
+
+    // document.querySelector('.theme-button').addEventListener('click', function() {
+    //     if (moonIcon.style.display === 'block') {
+    //         moonIcon.style.display = 'none';
+    //         sunIcon.style.display = 'block';
+    //     } else {
+    //         moonIcon.style.display = 'block';
+    //         sunIcon.style.display = 'none';
+    //     }
+    // });
+    
 };
+
+function login() {
+    window.location.href = "login.html";
+}
+
+function register() {
+    window.location.href = "register.html";
+}

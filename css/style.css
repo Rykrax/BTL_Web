@@ -126,11 +126,11 @@ button {
 }
 
 .nav-link:hover {
-    background-color: #d7d6d6;
+    background-color: #b8b7b7;
 }
 
 .nav-link .icon {
-    margin-right: 0.2rem;
+    margin-right: 0.5rem;
     font-size: 1.25rem;
     color: var(--char-color);
 }
@@ -253,22 +253,56 @@ button {
     display: block;
     font-weight: bold;
     text-align: center;
+    user-select: none;
 }
 
 .sub-menu button {
     height: 2.5rem;
+    border-radius: 0.25rem;
 }
 
 .sub-menu .sign-in {
     background-color: orangered;
-}
-/* .profile-container ul li {
-    list-style: none;
+    margin-bottom: 0.5rem;
 }
 
-.container-detail .user {
-    height: 7rem;
-} */
+.sub-menu .sign-in:hover {
+    background-color: rgba(233, 65, 3, 0.621);
+}
+
+.sub-menu .register:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.user-info-login {
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.profile-info {
+    margin-bottom: 0.5rem;
+}
+
+.profile-info
+,.log-out {
+    height: 2.5rem;
+    /* display: block; */
+    line-height: 2.5rem;
+    border-radius: 0.25rem;
+}
+
+.profile-info:hover
+,.log-out:hover {
+    background-color: #d7d6d6;
+}
+
+.theme-button #moon {
+    display: block;
+}
+
+.theme-button #sun {
+    display: none;
+}
 
 .header-options .icons i {
     color: var(--black-color);
